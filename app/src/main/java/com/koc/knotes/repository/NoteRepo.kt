@@ -3,11 +3,11 @@ package com.koc.knotes.repository
 import android.arch.lifecycle.LiveData
 import com.koc.knotes.KNotesApp
 import com.koc.knotes.model.data.NoteDataModel
-import com.koc.knotes.model.view.NoteViewModel
+import com.koc.knotes.model.view.NoteUiModel
 import com.koc.knotes.util.toDataModel
 import io.reactivex.Single
 
-class NoteRepo : INoteRepo {
+class NoteRepo {
 
     companion object {
         private var mInstance: NoteRepo? = null
@@ -20,11 +20,23 @@ class NoteRepo : INoteRepo {
             }
     }
 
-    override fun getAllNote(): LiveData<List<NoteDataModel>> {
+    fun getAllNote(): LiveData<List<NoteDataModel>> {
         return KNotesApp.database.KNotesDao().getAllNotes()
     }
 
-    override fun saveNote(viewModel: NoteViewModel) {
-        KNotesApp.database.KNotesDao().insertNote(viewModel.toDataModel)
+    fun getSingleNote(noteId: Int): LiveData<NoteDataModel> {
+        return KNotesApp.database.KNotesDao().getSingleNote(noteId)
+    }
+
+    fun saveNote(uiModel: NoteUiModel) {
+        KNotesApp.database.KNotesDao().insertNote(uiModel.toDataModel)
+    }
+
+    fun updateNote(uiModel: NoteUiModel) {
+        KNotesApp.database.KNotesDao().updateNote(uiModel.toDataModel)
+    }
+
+    fun deleteNote(uiModel: NoteUiModel) {
+        KNotesApp.database.KNotesDao().deleteNote(uiModel.toDataModel)
     }
 }

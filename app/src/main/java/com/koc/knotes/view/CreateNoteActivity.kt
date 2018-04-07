@@ -1,4 +1,4 @@
-package com.koc.knotes.ui
+package com.koc.knotes.view
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders

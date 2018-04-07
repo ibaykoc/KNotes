@@ -1,10 +1,7 @@
 package com.koc.knotes.db
 
 import android.arch.lifecycle.LiveData
-import android.arch.persistence.room.Dao
-import android.arch.persistence.room.Insert
-import android.arch.persistence.room.OnConflictStrategy
-import android.arch.persistence.room.Query
+import android.arch.persistence.room.*
 import com.koc.knotes.model.data.NoteDataModel
 import io.reactivex.Single
 
@@ -13,6 +10,15 @@ interface KNotesDao {
     @Query("SELECT * FROM notes")
     fun getAllNotes(): LiveData<List<NoteDataModel>>
 
+    @Query("SELECT * FROM notes WHERE noteId = :noteId")
+    fun getSingleNote(noteId:Int): LiveData<NoteDataModel>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertNote(noteDataModel: NoteDataModel)
+
+    @Update
+    fun updateNote(noteDataModel: NoteDataModel)
+
+    @Delete
+    fun deleteNote(noteDataModel: NoteDataModel)
 }
