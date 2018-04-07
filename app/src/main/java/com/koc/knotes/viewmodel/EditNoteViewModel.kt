@@ -35,17 +35,4 @@ class EditNoteViewModel(val noteId: Int) : ViewModel() {
             )
         }
     }
-
-    fun deleteNote() {
-        noteUiModel.value?.let {
-            compositeDisposable.add(
-                    UCDeleteNote(it).execute()
-                            .subscribe({
-                                noteUpdated.value = true
-                            },{
-
-                            })
-            )
-        }
-    }
 }

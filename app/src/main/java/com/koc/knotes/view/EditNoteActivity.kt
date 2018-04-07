@@ -54,10 +54,6 @@ class EditNoteActivity : AppCompatActivity() {
                         editText_note.text.toString())
                 return true
             }
-            R.id.delete -> {
-                viewModel.deleteNote()
-                return true
-            }
             else -> {
                 return super.onOptionsItemSelected(item)
             }

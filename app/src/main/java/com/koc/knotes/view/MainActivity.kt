@@ -6,6 +6,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.PopupMenu
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
@@ -73,6 +74,30 @@ class MainActivity : AppCompatActivity() {
             with(holder.itemView) {
                 title.text = notes[position].title
                 body.text = notes[position].body
+                more.setOnClickListener {
+                    val popupMenu = PopupMenu(this@MainActivity,it)
+                    val menu = popupMenu.menu
+
+                    popupMenu.menuInflater.inflate(R.menu.note_item_more_menu, menu)
+                    popupMenu.setOnMenuItemClickListener {
+                        when(it.itemId){
+                            R.id.edit -> {
+                                this@MainActivity.openEditNote(notes[position].id)
+                                true
+                            }
+                            R.id.delete -> {
+                                this@MainActivity.viewModel.deleteNote(position)
+                                true
+                            }
+                            else -> {
+                                true
+                            }
+                        }
+                    }
+
+                    popupMenu.show()
+
+                }
                 setOnClickListener {
                     this@MainActivity.openEditNote(notes[position].id)
                 }
