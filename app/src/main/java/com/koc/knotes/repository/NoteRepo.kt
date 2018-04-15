@@ -3,7 +3,7 @@ package com.koc.knotes.repository
 import android.arch.lifecycle.LiveData
 import com.koc.knotes.KNotesApp
 import com.koc.knotes.model.data.NoteDataModel
-import com.koc.knotes.model.view.NoteUiModel
+import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.util.toDataModel
 import io.reactivex.Single
 

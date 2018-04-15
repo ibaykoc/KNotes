@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.koc.knotes.R
-import com.koc.knotes.model.view.NoteUiModel
+import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.util.EDIT_NOT_EXTRA_ID
 import com.koc.knotes.viewmodel.EditNoteViewModel
 import com.koc.knotes.viewmodel.factory.EditNoteViewModelFactory

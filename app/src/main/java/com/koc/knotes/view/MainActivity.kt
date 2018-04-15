@@ -12,7 +12,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import com.koc.knotes.R
-import com.koc.knotes.model.view.NoteUiModel
+import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.util.inflate
 import com.koc.knotes.util.openCreateNote
 import com.koc.knotes.util.openEditNote

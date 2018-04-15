@@ -1,12 +1,12 @@
 package com.koc.knotes.usecase
 
-import com.koc.knotes.model.view.NoteUiModel
+import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.repository.NoteRepo
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
-class UCDeleteNote(val noteUiModel: NoteUiModel) : UseCase {
+class UCDeleteNote(private val noteUiModel: NoteUiModel) : UseCase {
     val noteRepo = NoteRepo.instance
 
     override fun execute(): Single<Unit> {

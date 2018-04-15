@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.koc.knotes.model.data.NoteDataModel
-import com.koc.knotes.model.view.NoteUiModel
+import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.view.CreateNoteActivity
 import com.koc.knotes.view.EditNoteActivity
 
