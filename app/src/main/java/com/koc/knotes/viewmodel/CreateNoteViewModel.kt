@@ -3,7 +3,7 @@ package com.koc.knotes.viewmodel
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import com.koc.knotes.model.ui.NoteUiModel
-import com.koc.knotes.usecase.UCSaveNote
+import com.koc.knotes.usecase.UCInsertNewNote
 
 class CreateNoteViewModel : ViewModel() {
 
@@ -18,7 +18,7 @@ class CreateNoteViewModel : ViewModel() {
     fun save() {
         note.value?.let {
             loading.value = true
-            UCSaveNote(it).execute()
+            UCInsertNewNote(it).execute()
                     .subscribe({
                         loading.value = false
                         saved.value = true

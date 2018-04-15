@@ -5,7 +5,6 @@ import com.koc.knotes.KNotesApp
 import com.koc.knotes.model.data.NoteDataModel
 import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.util.toDataModel
-import io.reactivex.Single
 
 class NoteRepo {
 
@@ -28,8 +27,8 @@ class NoteRepo {
         return KNotesApp.database.KNotesDao().getSingleNote(noteId)
     }
 
-    fun saveNote(uiModel: NoteUiModel) {
-        KNotesApp.database.KNotesDao().insertNote(uiModel.toDataModel)
+    fun insertNewNote(uiModel: NoteUiModel) {
+        KNotesApp.database.KNotesDao().insertNewNote(uiModel.toDataModel)
     }
 
     fun updateNote(uiModel: NoteUiModel) {

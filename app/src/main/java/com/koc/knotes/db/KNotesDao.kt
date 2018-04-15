@@ -14,7 +14,7 @@ interface KNotesDao {
     fun getSingleNote(noteId:Int): LiveData<NoteDataModel>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertNote(noteDataModel: NoteDataModel)
+    fun insertNewNote(noteDataModel: NoteDataModel)
 
     @Update
     fun updateNote(noteDataModel: NoteDataModel)
