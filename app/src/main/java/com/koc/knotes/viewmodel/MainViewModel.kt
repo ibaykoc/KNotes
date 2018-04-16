@@ -4,15 +4,15 @@ import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.Transformations
 import android.arch.lifecycle.ViewModel
 import com.koc.knotes.usecase.UCDeleteNote
-import com.koc.knotes.usecase.UCGetAllNote
+import com.koc.knotes.usecase.UCGetLiveDataAllNote
 import com.koc.knotes.util.toUiModel
 import io.reactivex.disposables.CompositeDisposable
 
 class MainViewModel : ViewModel() {
-    private val notes = UCGetAllNote().execute()
+    private val notes = UCGetLiveDataAllNote().execute()
     val loading = MutableLiveData<Boolean>()
 
-    val compositeDisposable = CompositeDisposable()
+    private val compositeDisposable = CompositeDisposable()
 
     val viewNotes = Transformations.map(notes, {
         it.toUiModel

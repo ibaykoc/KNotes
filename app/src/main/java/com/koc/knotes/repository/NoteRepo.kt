@@ -2,40 +2,47 @@ package com.koc.knotes.repository
 
 import android.arch.lifecycle.LiveData
 import com.koc.knotes.KNotesApp
+import com.koc.knotes.db.KNotesDatabase
 import com.koc.knotes.model.data.NoteDataModel
 import com.koc.knotes.model.ui.NoteUiModel
 import com.koc.knotes.util.toDataModel
 
 class NoteRepo {
 
+
     companion object {
+        lateinit var database: KNotesDatabase
         private var mInstance: NoteRepo? = null
         val instance: NoteRepo
             get() {
-                if(mInstance == null)
+                if (mInstance == null)
                     mInstance = NoteRepo()
 
                 return mInstance!!
             }
+
+        fun init(database: KNotesDatabase) {
+            this.database = database
+        }
     }
 
     fun getAllNote(): LiveData<List<NoteDataModel>> {
-        return KNotesApp.database.KNotesDao().getAllNotes()
+        return database.KNotesDao().getAllNotes()
     }
 
     fun getSingleNote(noteId: Int): LiveData<NoteDataModel> {
-        return KNotesApp.database.KNotesDao().getSingleNote(noteId)
+        return database.KNotesDao().getSingleNote(noteId)
     }
 
     fun insertNewNote(uiModel: NoteUiModel) {
-        KNotesApp.database.KNotesDao().insertNewNote(uiModel.toDataModel)
+        database.KNotesDao().insertNewNote(uiModel.toDataModel)
     }
 
     fun updateNote(uiModel: NoteUiModel) {
-        KNotesApp.database.KNotesDao().updateNote(uiModel.toDataModel)
+        database.KNotesDao().updateNote(uiModel.toDataModel)
     }
 
     fun deleteNote(uiModel: NoteUiModel) {
-        KNotesApp.database.KNotesDao().deleteNote(uiModel.toDataModel)
+        database.KNotesDao().deleteNote(uiModel.toDataModel)
     }
 }
