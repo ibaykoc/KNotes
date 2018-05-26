@@ -3,11 +3,11 @@
 
 #### Add,
 <img src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" width="200">
-####  Edit,
+#### Edit,
 <img src="https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif" width="200">
-####  and Delete Note
+#### and Delete Note
 <img src="https://media.giphy.com/media/3JYpWygQB02rTOL3NE/giphy.gif" width="200">
-####  with Persistence Database
+#### with Persistence Database
 <img src="https://media.giphy.com/media/1n4IDRzXArf34rQe9y/giphy.gif" width="200">
 
 ## Built With
