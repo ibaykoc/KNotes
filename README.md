@@ -2,7 +2,7 @@
 # KNotes
 
 #### Add,
-<img src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" width="200">
+<img src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" width="300">
 
 #### Edit,
 <img src="https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif" width="200">
