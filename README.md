@@ -3,12 +3,9 @@
 
 #### Add,
 <p align="center">
-  <img width="300" height="500" src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" >
+  <img width="300" height="534" src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" >
 </p>
 
-<p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
 #### Edit,
 <img src="https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif" width="200">
 
