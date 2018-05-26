@@ -2,9 +2,9 @@
 # KNotes
 
 #### Add,
-<p align="center">
+<div align="center">
   <img "src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" width="300">
-</p>
+</div>
 
 #### Edit,
 <img src="https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif" width="200">
