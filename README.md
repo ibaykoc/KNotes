@@ -2,9 +2,9 @@
 # KNotes
 
 #### Add,
-<div style="text-align:center">
-  <img "src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" width="300">
-</div>
+<p align="center">
+  <img width="300" height="500" src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" >
+</p>
 
 <p align="center">
   <img width="460" height="300" src="http://www.fillmurray.com/460/300">
