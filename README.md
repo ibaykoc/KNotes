@@ -2,10 +2,10 @@
 # KNotes
 
 #### Add, Edit, and Delete Note with Persistence Database
-![giphy](https://media.giphy.com/media/11BAcV7xeET1lyAog1/200w_d.gif)
-![giphy](https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/200w_d.gif)
-![giphy](https://media.giphy.com/media/3JYpWygQB02rTOL3NE/200w_d.gif)
-![giphy](https://media.giphy.com/media/1n4IDRzXArf34rQe9y/200w_d.gif)   
+![giphy](https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif)
+![giphy](https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif)
+![giphy](https://media.giphy.com/media/3JYpWygQB02rTOL3NE/giphy.gif)
+![giphy](https://media.giphy.com/media/1n4IDRzXArf34rQe9y/giphy.gif)   
 
 ## Built With
 
