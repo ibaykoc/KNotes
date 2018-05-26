@@ -1,20 +1,20 @@
 
 # KNotes
 
-#### Add,
 <p align="center">
-  <b>ADD</b><br>
+  <b>ADD,</b><br>
   <img width="300" height="534" src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" >
+  <br><br>
+  <b>EDIT,</b><br>
+  <img width="300" height="534" src="https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif" >
+  <br><br>
+  <b>and DELETE,</b><br>
+  <img width="300" height="534" src="https://media.giphy.com/media/3JYpWygQB02rTOL3NE/giphy.gif" >
+  <br><br>
+  <b>with PERSISTENCE DATABASE,</b><br>
+  <img width="300" height="534" src="https://media.giphy.com/media/1n4IDRzXArf34rQe9y/giphy.gif" >
+  <br><br>
 </p>
-
-#### Edit,
-<img src="https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif" width="200">
-
-#### and Delete Note
-<img src="https://media.giphy.com/media/3JYpWygQB02rTOL3NE/giphy.gif" width="200">
-
-#### with Persistence Database
-<img src="https://media.giphy.com/media/1n4IDRzXArf34rQe9y/giphy.gif" width="200">
 
 ## Built With
 
