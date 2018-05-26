@@ -2,6 +2,7 @@
 # KNotes
 
 #### Add, Edit, and Delete Note with Persistence Database
+<img src="https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif" width="48">
 ![giphy](https://media.giphy.com/media/11BAcV7xeET1lyAog1/giphy.gif){:height="24px" width="48px"}
 ![giphy](https://media.giphy.com/media/ftdWleTOQQ3kVgw1EI/giphy.gif)
 ![giphy](https://media.giphy.com/media/3JYpWygQB02rTOL3NE/giphy.gif)
